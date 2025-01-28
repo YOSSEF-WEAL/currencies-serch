@@ -11,10 +11,7 @@ const getCountryData = function (country)
   request.addEventListener('load', function ()
   {
     const [data] = JSON.parse(this.responseText);
-    console.log(data);
-
     const html = `
-
 <div class="card" data-aos="flip-left" style="width: 18rem;">
   <img src="${data.flag}" class="card-img-top" alt="">
   <div class="card-body">
